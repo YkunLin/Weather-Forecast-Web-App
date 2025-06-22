@@ -8,20 +8,24 @@
 </head>
 <body>
     <div id="main">
-        <div id="title">Weather</div>
+        <div id="mylocation">Current region</div>
+        <div id="region">City name</div>
         <div id="inputArea">
-            <input id="input" type="text" placeholder="Enter city name">
+            <input id="input" type="text" placeholder="Enter region name">
             <div id="searchButton">Search</div>
         </div>
 
         <div id="displayArea">
-            <div id="simple">current weather quicklook</div>
-            <div id="day">one day weather</div>
-            <div id="week">one week weather</div>
+            <div id="simple">
+                <div>current: <span id="currentTemp"></span></div>
+                <div>highest: <span id="maxTemp"></span></div>
+                <div>lowest: <span id="minTemp"></span></div>
+                <div>condition: <span id="condition"></span></div>
+            </div>
+            <div id="day" class="hour-scroll-container"></div>
+            <div id="week"></div>
         </div>
-
-
     </div>
-
+<script src="weather.js"></script>
 </body>
 </html>

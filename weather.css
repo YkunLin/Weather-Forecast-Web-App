@@ -14,11 +14,17 @@ body{
     padding-top: 20px;
     padding-bottom: 30px;
 }
-
-#title{
+#mylocation{
     color:white ;
     text-align: center;
+    font-size:14px;
+}
 
+#region{
+    color:white ;
+    text-align: center;
+    font-size:25px;
+    font-weight:bold;
 
 }
 
@@ -68,22 +74,86 @@ body{
 #simple{
     background-color: darkgray;
     width:50%;
-    height:50px;
+    /* height:50px; */
     margin-top:10px;
     margin-bottom:5px;
+    color:white;
 }
+/* #currentTemp{
+
+}
+
+#maxTemp{
+
+
+}
+
+#minTemp{
+
+}
+#condition{
+
+} */
 
 #day{
     background-color: darkgray;
     width:50%;
-    height:50px;
+    /* height:50px; */
     margin-top:5px;
     margin-bottom:5px;
 }
+
+.hour-scroll-container{
+    display:flex;
+    overflow-x:auto;
+    white-space: nowrap;
+    padding: 10px;
+    gap: 10px;
+    scroll-behavior: smooth;
+}
+.hour-scroll-container::-webkit-scrollbar {
+  height: 8px;
+}
+.hour-scroll-container::-webkit-scrollbar-thumb {
+  background-color: #aaa;
+  border-radius: 4px;
+}
+
+.hour-card{
+    min-width: 120px;
+  background: white;
+  padding: 10px;
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
 #week{
     background-color: darkgray;
     width:50%;
-    height:50px;
+    /* height:50px; */
     margin-top:5px;
     margin-bottom:5px;
+}
+
+.week-day-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #f8f8f8;
+  padding: 10px;
+  border-radius: 6px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  margin:10px;
+}
+
+.week-day-label {
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.weather-info {
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
