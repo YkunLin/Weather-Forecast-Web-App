@@ -3,17 +3,21 @@
 }
 body{
     display:flex;
+    min-width: 300px;
     justify-content: center;
     align-items: center;
+    background-color: rgb(30, 127, 160);
 }
+
 #main{
-    width:80%;
-    background-color: aqua;
-    margin-top: 60px;
-    border-radius: 5px;
+    max-width: 900px;
+    min-width: 300px;
+    width:90%;
+    margin-top: 5%;
     padding-top: 20px;
     padding-bottom: 30px;
 }
+
 #mylocation{
     color:white ;
     text-align: center;
@@ -23,7 +27,7 @@ body{
 #region{
     color:white ;
     text-align: center;
-    font-size:25px;
+    font-size:30px;
     font-weight:bold;
 
 }
@@ -48,7 +52,6 @@ body{
 #searchButton{
     line-height:35px;
     text-align: center;
-    width:50px;
     height:35px;
     border-radius: 0px 5px 5px 0px;
     border:1px solid gray;
@@ -72,35 +75,37 @@ body{
 }
 
 #simple{
-    background-color: darkgray;
-    width:50%;
-    /* height:50px; */
+    min-width: 20%;
     margin-top:10px;
     margin-bottom:5px;
     color:white;
+    text-align: center;
 }
-/* #currentTemp{
-
-}
-
-#maxTemp{
-
-
+#currentTemp{
+    font-size: 38px;
+    padding-top:10px;
 }
 
-#minTemp{
-
+#highlow{
+    display: flex;
+    justify-content: space-between;
+    padding-left:15%;
+    padding-right:15%;
 }
+
+
 #condition{
-
-} */
+    padding-bottom:10px;
+    color:rgb(182, 209, 243);
+} 
 
 #day{
-    background-color: darkgray;
-    width:50%;
-    /* height:50px; */
+    background-color: rgb(135,192,202);
+    width:75%;
+    min-width:330px;
     margin-top:5px;
     margin-bottom:5px;
+    border-radius: 10px;
 }
 
 .hour-scroll-container{
@@ -115,25 +120,26 @@ body{
   height: 8px;
 }
 .hour-scroll-container::-webkit-scrollbar-thumb {
-  background-color: #aaa;
+  background-color: rgb(168, 236, 229);
   border-radius: 4px;
 }
 
 .hour-card{
-    min-width: 120px;
+  min-width: 100px;
   background: white;
-  padding: 10px;
+  padding: 5px;
   border-radius: 8px;
   text-align: center;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
 }
 
 #week{
-    background-color: darkgray;
-    width:50%;
-    /* height:50px; */
+    background-color: rgb(135,192,202);
+    width:75%;
+    min-width: 330px;
     margin-top:5px;
     margin-bottom:5px;
+    border-radius: 10px;
 }
 
 .week-day-row {

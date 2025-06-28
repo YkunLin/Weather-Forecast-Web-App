@@ -58,8 +58,7 @@ function displayHourlyWeather(data){
         card.innerHTML = `
             <strong>${time}</strong><br>
             <img src="${iconUrl}" width="40"><br>
-            ${temp}°C<br>
-            ${condition}
+            ${temp}°C
         `;
 
         container.appendChild(card);
