@@ -1,4 +1,5 @@
 # Weather Forecast Web App
+<img src="Screenshot.jpg" width="700">
 
 A small personal weather forecast project built with HTML, CSS, and JavaScript using the WeatherAPI service.
 
