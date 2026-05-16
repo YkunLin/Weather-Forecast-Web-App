@@ -69,7 +69,7 @@ function displayHourlyWeather(data){
 function displayWeeklyWeather(data){
     const weekList = document.getElementById("week");
     weekList.innerHTML="";
-    
+
     const tz = data.location.tz_id; //ex: "Asia/Shanghai"
     const formatter = new Intl.DateTimeFormat("en-US", {
         weekday: "long",
@@ -85,8 +85,8 @@ function displayWeeklyWeather(data){
         const dateStr = `${month}/${dayNum}`; // MM/DD
 
         const label = index === 0
-            ? `Today（${dateStr}）`
-            : `${weekday}（${dateStr}）`;
+            ? `Today (${dateStr})`
+            : `${weekday} (${dateStr})`;
 
         const minTemp = day.day.mintemp_c;
         const maxTemp = day.day.maxtemp_c;

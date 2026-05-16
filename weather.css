@@ -5,7 +5,7 @@ body{
     display:flex;
     min-width: 300px;
     justify-content: center;
-    align-items: center;
+    /* align-items: center; */
     background-color: rgb(30, 127, 160);
 }
 
@@ -75,7 +75,7 @@ body{
 }
 
 #simple{
-    min-width: 20%;
+    min-width:20%;
     margin-top:10px;
     margin-bottom:5px;
     color:white;
